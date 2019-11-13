@@ -1,4 +1,5 @@
 from public.common import mytest
+from public.pages.management.branchOrgan.addBranchOrganPage import AddBranchOrganPage
 from public.pages.management.loginPage import LoginPage
 from public.pages.management.organ.addOrganPage import AddOrganPage
 from public.pages.management.organ.organCreditAddPage import OrganCreditAddPage
@@ -7,7 +8,7 @@ from public.pages.management.organ.organPage import OrganPage
 from public.pages.management.recordPage import RecordPage
 from public.pages.management.registerPage import RegisterPage
 from public.parameters.mps import registerParam, recordParam, addOrganParam, addBadBehaviorParam, \
-    addOrganBlackListParam, addGoodBehaviorParam, addAssociationBlackListParam
+    addOrganBlackListParam, addGoodBehaviorParam, addAssociationBlackListParam, addBranchOrganParam
 
 
 class TestManagement(mytest.MyTest):
@@ -98,3 +99,8 @@ class TestManagement(mytest.MyTest):
     def test14_addAssociationBlackList(self):
         organCreditAddPage = OrganCreditAddPage(self.dr)
         organCreditAddPage.addAssociationBlackList(**addAssociationBlackListParam)
+
+    # 测试机构新增分支机构
+    def test15_addBranchOrgan(self):
+        adBranchOrganPage = AddBranchOrganPage(self.dr)
+        adBranchOrganPage.addBranOrgan(**addBranchOrganParam)

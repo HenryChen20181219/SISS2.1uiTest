@@ -1,5 +1,5 @@
 from public.pages.management.organ.organPage import OrganPage
-from public.parameters.mps import loginparam
+from public.parameters.mps import organLoginParam
 
 
 class BranchOrganPage(OrganPage):
@@ -18,19 +18,19 @@ class BranchOrganPage(OrganPage):
 
     # 进入分支机构列表
     def branchOrganList(self):
-        self.login(**loginparam)
+        self.login(**organLoginParam)
         self.click_branchOrgan()
         self.click_organList()
 
     # 进入分支机构星级列表
     def branchOrganStar(self):
-        self.login(**loginparam)
+        self.login(**organLoginParam)
         self.click_branchOrgan()
         self.click_organStar()
 
     # 进入分支机构诚信列表
     def branchOrganCredit(self):
-        self.login(**loginparam)
+        self.login(**organLoginParam)
         self.click_branchOrgan()
         self.click_organCredit()
 
@@ -49,4 +49,3 @@ class BranchOrganPage(OrganPage):
         self.selectQueryType("统一社会信用代码")
         self.input_keyWord(branchOrganCode)
         self.click_query()
-        

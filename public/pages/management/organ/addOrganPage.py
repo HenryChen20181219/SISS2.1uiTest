@@ -1,9 +1,9 @@
 from public.common.publicfunction import upload_photo
-from public.pages.management import registerPage
-from public.pages.management.organ import organListPage
+from public.pages.management.organ.organListPage import OrganListPage
+from public.pages.management.registerPage import RegisterPage
 
 
-class AddOrganPage(registerPage.RegisterPage, organListPage.OrganListPage):
+class AddOrganPage(RegisterPage, OrganListPage):
 
     def input_organCode(self,code):
         self.dr.clear_type("xpath->//input[@name='inputCode']",code)

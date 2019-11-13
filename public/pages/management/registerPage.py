@@ -47,7 +47,7 @@ class RegisterPage(indexPage.IndexPage):
 
 
     def click_province(self):
-        self.dr.click("xpath->(//input[@placeholder='请选择省'])[1]")
+        self.dr.click("xpath->//input[@placeholder='请选择省'][1]")
 
 
     def select_province(self, province):
@@ -59,7 +59,7 @@ class RegisterPage(indexPage.IndexPage):
 
 
     def select_city(self, city):
-        self.dr.click("xpath->(//span[contains(.,'{}')])".format(city))
+        self.dr.click("xpath->//span[@class='text-ellipsis ng-binding ng-scope'][contains(.,'{}')]".format(city))
 
 
     def click_area(self):
@@ -67,7 +67,7 @@ class RegisterPage(indexPage.IndexPage):
 
 
     def select_area(self, area):
-        self.dr.click("xpath->(//span[contains(.,'{}')])".format(area))
+        self.dr.click("xpath->//span[@class='text-ellipsis ng-binding ng-scope'][contains(.,'{}')]".format(area))
 
 
     def input_address(self, address):

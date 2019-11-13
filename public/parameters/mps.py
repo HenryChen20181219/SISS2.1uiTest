@@ -4,6 +4,11 @@ loginparam = {
     "password": "123456",
 }
 
+organLoginParam = {
+    "username": "91440300715279885G",
+    "password": "123456",
+}
+
 # 注册参数
 registerParam = {
     "code": "914303000671011961",
@@ -100,7 +105,6 @@ addGoodBehaviorParam = {
     "reason": "测试加入良好行为记录"
 }
 
-
 # 新增联合协会"机构行业黑名单 参数
 addAssociationBlackListParam = {
     "keyWord": "测试",
@@ -108,4 +112,19 @@ addAssociationBlackListParam = {
     "blackListType": "自律类",
     "industryIndex": "行",
     "reason": "测试加入联合协会机构行业黑名单"
+}
+
+# 机构新增分支机构 参数
+addBranchOrganParam = {
+    "code": "91440300793893875E",
+    "branchOrganName": "世华分支机构一测试",
+    "phone": "18202735509",
+    "province": "广东省",
+    "city": "深圳市",
+    "area": "福田区",
+    "address": "测试地址11",
+    "email": "2515245950@qq.com",
+    "legalPersonName": "莫言一",
+    "legalPersonIdCard": "420702199312036839",
+    "legalPersonPhone": "18202735509"
 }
