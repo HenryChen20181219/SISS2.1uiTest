@@ -1,7 +1,7 @@
-from public.pages.management.organ import organPage
+from public.pages.management.organ.organPage import OrganPage
 
 
-class OrganListPage(organPage.OrganPage):
+class OrganListPage(OrganPage):
 
     def click_add(self):
         self.dr.click("xpath->//div[@ng-click='add()']")
