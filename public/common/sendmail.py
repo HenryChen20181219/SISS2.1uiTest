@@ -15,8 +15,8 @@ logger = Log()
 # recvaddress = ['xxx.xx@xxx.com','xxxx@qq.com']
 recvaddress = ['1280143116@qq.com',]
 # 163的用户名和密码
-sendaddr_name = '18202735509@163.com'
-sendaddr_pswd = 'c99335' #填授权码
+sendaddr_name = '***********@163.com'
+sendaddr_pswd = '******' #填授权码
 
 class SendMail:
 	def __init__(self,recver=None):
